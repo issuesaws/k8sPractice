@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapache2
+  namespace: Dev
+spec:
+  containers:
+  - name: myfirstapache2
+    image: ubuntu/apache2
+  ports:
+  - name: inboundport
+    containerPort: 80
+
+
